@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <h2>Login Form</h2>
+    <form onsubmit="loginform(); return false;">
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="email" class="email" name="email" placeholder="Enter your email"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="password" name="password" placeholder="Enter your password"><br>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div id="message"></div>
+
+    <h2>Weather Information</h2>
+    <form onsubmit="weatherinfo();
+ return false;">
+
+        <div>
+            <label for="enter-city">Enter City:</label>
+            <input type="text" class="city" id="city" name="city" placeholder="Enter Your City Name">
+        </div>
+        <button type="submit">Weather Condition</button>
+    </form>
+    <h2 id="weathercondition"></h2>
+
+    <h2>Contact Form</h2>
+    <form onsubmit="contactform(); return false;">
+        <div>
+            <label for="Name">Enter Your Name:</label>
+            <input type="text" class="name" id="name" name="name" placeholder="Enter Your Name"><br>
+            <label for="Address">Enter Your Address:</label>
+            <input type="text" class="Address" id="Address" name="Address" placeholder="Enter Your Address"><br>
+            <label for="number">Enter Your Phone No:</label>
+            <input type="number" class="number" id="number" name="number" placeholder="Enter Your Phone No"><br>
+            <label for="Email">Email:</label>
+            <input type="email" id="emails" class="emails" name="emails" placeholder="Enter your email"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="passwords" class="passwords" name="passwords" placeholder="Enter your password"><br>
+
+        </div>
+<button type="submit">Submit</button>
+    </form>
+    <h2 id="contactmessage"></h2>
+
+    <script src="./script.js"></script>
+</body>
+</html>
